@@ -18,10 +18,7 @@ import {
     List,
     ListItem,
     ListIcon,
-    ButtonGroup
   } from '@chakra-ui/react'
-
-  
 const logos = [
   {
     id: 'image-id-1',
@@ -316,8 +313,8 @@ const [selectPriceRange, setSelectedPriceRange] = useState(null)
   }, []);
 
   return (
-   <Box h="80vh">
-    <Flex justifyContent={'space-between'} alignItems="center" w={'full'} mt={10}>
+   <Box h={{base:"100%", md:"80vh", lg:"80vh"}}>
+    <Flex justifyContent={'space-between'} alignItems={{base:"start", md:"center",lg:"center"}} w={'full'} mt={10} flexDirection={{base:'column',md:'row', lg:'row'}} gap={{base:4,md:0,lg:0}}> 
     <Select placeholder='Price' variant='outlined' border={'1px solid #dae3e5'} bg='transparent' p={1} icon={<MdArrowDropDown />} w="50px%"  
     value={selectPriceRange} onChange={(e) => { setSelectedPriceRange(e.target.value); return filterData(e)}}>
   <option value='R0 - R699'>R0 - R699</option>

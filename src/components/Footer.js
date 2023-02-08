@@ -31,7 +31,7 @@ import {
   
   export default function LargeWithLogoCentered() {
     return (
-      <Box h="50vh"
+      <Box h={{base:'100%', md:"100%",lg:'50vh'}}
         bg="#1a1a1a"
         color="#fafafa">
         <Container as={Stack} maxW={'6xl'} py={10}>

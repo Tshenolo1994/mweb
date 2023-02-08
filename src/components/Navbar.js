@@ -30,7 +30,7 @@ import {
       <Box>
         <Flex
         h={'10vh'}
-          bg={'#faf9f9'}
+       bg={{base:'#2c1ce4', md:'#faf9f9',lg:'#faf9f9'}}
           color={useColorModeValue('gray.600', 'white')}
           minH={'60px'}
           py={{ base: 2 }}
@@ -62,7 +62,6 @@ import {
               <DesktopNav />
             </Flex>
           </Flex>
-  
           <Stack
             flex={{ base: 1, md: 0 }}
             justify={'flex-end'}
