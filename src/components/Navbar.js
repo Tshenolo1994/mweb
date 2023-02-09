@@ -56,7 +56,7 @@ import {
     objectFit='contain'
     src={logo}
     alt='logo'
-    filter={'invert(19%) sepia(100%) saturate(2772%) hue-rotate(242deg) brightness(81%) contrast(130%)'}
+  filter={{base:"", md:'invert(14%) sepia(3%) saturate(0%) hue-rotate(148deg) brightness(88%) contrast(88%)', lg:'invert(14%) sepia(3%) saturate(0%) hue-rotate(148deg) brightness(88%) contrast(88%)'}}
   />
             <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
               <DesktopNav />
